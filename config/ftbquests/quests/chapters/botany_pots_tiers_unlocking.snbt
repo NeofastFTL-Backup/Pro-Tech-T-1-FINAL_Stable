@@ -1,0 +1,85 @@
+{
+	id: "05E64C9815AA76AD"
+	group: ""
+	order_index: 4
+	filename: "botany_pots_tiers_unlocking"
+	title: "Mod Unlocking!"
+	icon: "thermal:enderium_gear"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Unlock Botany Pots!"
+			icon: "botanypotstiers:elite_black_concrete_botany_pot"
+			x: -0.5d
+			y: 0.0d
+			subtitle: "Get a lot of seeds planted and harvested!"
+			id: "346D6345A1681398"
+			tasks: [{
+				id: "1834A4A40922DF91"
+				type: "item"
+				item: "kubejs:6_hay_bale"
+				count: 4L
+			}]
+			rewards: [{
+				id: "543D9751082477F7"
+				type: "command"
+				title: "Unlock it!"
+				icon: "minecraft:lever"
+				command: "/gamestage add @r botany_pots_stage"
+				player_command: true
+			}]
+		}
+		{
+			title: "Unlock Create!"
+			icon: "create:crushing_wheel"
+			x: -0.5d
+			y: -2.0d
+			subtitle: "Get your create running and up again!"
+			id: "393D660E8BDC697A"
+			tasks: [{
+				id: "1678FDC17C570170"
+				type: "item"
+				item: "compressium:andesite_6"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0341650EA7DF36E8"
+				type: "command"
+				title: "Unlock it!"
+				icon: "minecraft:lever"
+				command: "/gamestage add @r create_stage"
+				player_command: true
+			}]
+		}
+		{
+			title: "Unlock Mystical Agriculture!"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "mysticalagriculture:guide"
+				}
+			}
+			x: -0.5d
+			y: 2.0d
+			subtitle: "Lets produce those essences!"
+			id: "701C6FDCEAE28548"
+			tasks: [{
+				id: "1E3FDB36FB0897E4"
+				type: "item"
+				item: "compressium:dirt_6"
+				count: 4L
+			}]
+			rewards: [{
+				id: "16E12683F1750AE4"
+				type: "command"
+				title: "Unlock it!"
+				icon: "minecraft:lever"
+				command: "/phase grant @r m_a_seeds"
+				player_command: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,4 @@
+#3D6 minecraft:cold_ocean
+#010 minecraft:forest
+#5FF minecraft:river
+#51A minecraft:stony_shore

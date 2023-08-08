@@ -1,0 +1,33 @@
+{
+	id: "017B2DE285114556"
+	group: ""
+	order_index: 2
+	filename: "assembly_1"
+	title: "Assembly #1"
+	icon: {
+		id: "powah:wrench"
+		Count: 1b
+		tag: {
+			PowahWrenchNBT: { }
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Make your first machine!"
+		id: "59945FC6BDDF0219"
+		tasks: [{
+			id: "1E474ED17C0D4A0C"
+			type: "item"
+			item: "kubejs:1_component"
+		}]
+		rewards: [{
+			id: "1EB5BAA318D0F536"
+			type: "item"
+			item: "compressium:cobblestone_4"
+		}]
+	}]
+	quest_links: [ ]
+}
