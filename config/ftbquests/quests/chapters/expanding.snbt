@@ -1,0 +1,21 @@
+{
+	id: "37DF0E1EFB427C39"
+	group: ""
+	order_index: 9
+	filename: "expanding"
+	title: "Expanding?!"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "0F722D287AD283B4"
+		tasks: [{
+			id: "7B050DD640D8747E"
+			type: "item"
+			item: "minecraft:white_concrete"
+			count: 16L
+		}]
+	}]
+	quest_links: [ ]
+}

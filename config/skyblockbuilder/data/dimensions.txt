@@ -3,3 +3,4 @@ minecraft:the_end
 minecraft:the_nether
 mining_dimension:mining
 ae2:spatial_storage
+compactmachines:compact_world

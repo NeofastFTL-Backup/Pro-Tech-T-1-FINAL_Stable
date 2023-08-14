@@ -1,0 +1,5 @@
+{
+	warps: {
+		cave: { dim: "mining_dimension:mining", x: 15, y: 10, z: 4, time: 1691514845214L, xRot: 7.50014f, yRot: 91.65674f }
+	}
+}

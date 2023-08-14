@@ -10,6 +10,40 @@ onEvent('recipes', event => {
     event.remove({id: 'projecte:transmutation_table'});
     event.remove({id: 'mining_dimension:teleporter'});
     event.remove({id: 'thermal:device_rock_gen'});
+    event.remove({id: 'thermal:machine_smelter'});
+    event.remove({id: 'thermal:machine_crucible'});
+    event.remove({id: 'thermal:machine_bottler'});
+    event.remove({id: 'thermal:machine_furnace'});
+    event.remove({id: 'thermal:machine_sawmill'});
+    event.remove({id: 'thermal:dynamo_stirling'});
+    event.remove({id: 'thermal:machine_chiller'});
+    event.remove({input: 'minecraft:fire_charge' });
+    event.remove({id: 'rftoolsbase:machine_infuser'});
+    event.remove({id: 'industrialforegoing:machine_frame_pity'});
+    event.remove({id: 'compactcrafting:base'});
+    event.remove({id: 'compactcrafting:projector_dish'});
+    event.remove({id: 'excompressum:compressed_dirt'});
+    event.remove({id: 'mekanism:steel_casing'});
+    event.remove({id: 'mekanism:energized_smelter'});
+    event.remove({id: 'mekanism:metallurgic_infuser'});
+    event.remove({id: 'mekanism:upgrade_energy'});
+    event.remove({id: 'mekanism:upgrade_speed'});
+    event.remove({id: 'mekanism:crusher'});
+    
+    //Thermal Recipes
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('kubejs:bronzar_ingot', ['#forge:ingots/invar', '#forge:ingots/bronze']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('kubejs:intrum_ingot', ['#forge:ingots/invar', '#forge:ingots/electrum']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('kubejs:brassmium_ingot', ['#forge:ingots/brass', '#forge:ingots/osmium']
+    )});
+
+
 
     // ADDING KUBEJS RECIPES
     event.shaped('projecte:transmutation_table', [
@@ -21,6 +55,112 @@ onEvent('recipes', event => {
             D: 'kubejs:9_darkmatter',
             S: 'projecte:philosophers_stone'
         });
+
+
+        event.shaped('mekanism:steel_casing', [
+            'DAD',
+            'ASA',
+            'DAD'
+            ], {
+                A: '#forge:glass',
+                D: '#forge:ingots/steel',
+                S: 'kubejs:2_component'
+            });
+
+
+            event.shaped('mekanism:energized_smelter', [
+                'DBD',
+                'ASA',
+                'DBD'
+                ], {
+                    A: '#forge:glass',
+                    D: 'minecraft:redstone',
+                    B: 'mekanism:basic_control_circuit',
+                    S: 'mekanism:steel_casing'
+                });
+
+
+                event.shaped('mekanism:crusher', [
+                    'DBD',
+                    'ASA',
+                    'DBD'
+                    ], {
+                        A: 'minecraft:lava_bucket',
+                        D: 'minecraft:redstone_block',
+                        B: 'mekanism:basic_control_circuit',
+                        S: 'mekanism:steel_casing'
+                    });
+
+                    event.shaped('mekanism:metallurgic_infuser', [
+                        'DBD',
+                        'ASA',
+                        'DBD'
+                        ], {
+                            A: 'minecraft:redstone_block',
+                            D: 'minecraft:iron_block',
+                            B: 'minecraft:furnace',
+                            S: 'kubejs:2_component'
+                        });
+
+
+                        event.shaped('mekanism:upgrade_energy', [
+                            'AGA',
+                            'RCR',
+                            'AGA'
+                            ], {
+                                A: 'minecraft:air',
+                                R: 'minecraft:redstone',
+                                G: '#forge:glass',
+                                C: 'kubejs:intrum_ingot'
+                            });
+
+                            event.shaped('mekanism:upgrade_speed', [
+                                'AGA',
+                                'RCR',
+                                'AGA'
+                                ], {
+                                    A: 'minecraft:air',
+                                    R: 'minecraft:redstone',
+                                    G: '#forge:glass',
+                                    C: 'kubejs:brassmium_ingot'
+                                });
+
+
+        event.shaped('resourcechickens:dye_brown_chicken_spawn_egg', [
+            'DDD',
+            'DED',
+            'DDD'
+            ], {
+                D: 'minecraft:brown_dye',
+                E: 'minecraft:egg'
+            });
+
+            event.shaped('resourcechickens:dye_yellow_chicken_spawn_egg', [
+                'DDD',
+                'DED',
+                'DDD'
+                ], {
+                    D: 'minecraft:yellow_dye',
+                    E: 'minecraft:egg'
+                });
+
+                event.shaped('resourcechickens:quartz_chicken_spawn_egg', [
+                    'DDD',
+                    'DED',
+                    'DDD'
+                    ], {
+                        D: 'minecraft:quartz',
+                        E: 'minecraft:egg'
+                    });
+
+
+                    event.shaped('minecraft:egg', [
+                        'DDD',
+                        'DDD',
+                        'DDD'
+                        ], {
+                            D: 'compressium:dirt_1'
+                        });
 
         event.shaped('mining_dimension:teleporter', [
             'CZC',
@@ -53,6 +193,22 @@ onEvent('recipes', event => {
                 });
 
 
+                event.shaped('kubejs:2_component', [
+                    'OGC',
+                    'RIS',
+                    'DTE'
+                    ], {
+                        O: 'kubejs:brassmium_ingot',
+                        G: 'kubejs:intrum_ingot',
+                        C: 'kubejs:bronzar_ingot',
+                        R: 'kubejs:4_glowstone',
+                        I: 'kubejs:1_component',
+                        S: '#forge:ingots/signalum',
+                        D: '#forge:ingots/lumium',
+                        T: '#forge:ingots/constantan',
+                        E: 'thermal:redstone_bucket'
+                    });
+
                 event.shaped('thermal:device_rock_gen', [
                     'CZC',
                     'GPO',
@@ -65,7 +221,194 @@ onEvent('recipes', event => {
                         O: 'minecraft:magma_block',
                         I: 'thermal:redstone_servo'
                     });
+
+
+                event.shaped('compactcrafting:base', [
+                    'ARA',
+                    'OPO',
+                    'CCC'
+                    ], {
+                        C: 'minecraft:heavy_weighted_pressure_plate',
+                        A: 'minecraft:air',
+                        R: 'minecraft:redstone_torch',
+                        P: 'kubejs:1_component',
+                        O: 'minecraft:diamond'
+                    });
+
+                    event.shaped('compactcrafting:projector_dish', [
+                        'GOA',
+                        'GPO',
+                        'GOA'
+                        ], {
+                            A: 'minecraft:air',
+                            P: 'kubejs:1_component',
+                            G: '#forge:glass_panes',
+                            O: 'minecraft:iron_ingot'
+                        });
+
+                    event.shaped('thermal:machine_smelter', [
+                        'AXA',
+                        'GPG',
+                        'CIC'
+                        ], {
+                            C: 'thermal:invar_gear',
+                            X: 'minecraft:blast_furnace',
+                            A: 'minecraft:air',
+                            P: 'kubejs:1_component',
+                            G: '#forge:sand',
+                            P: 'kubejs:1_component',
+                            I: 'thermal:rf_coil'
+                        });
+    
+
+                    
+                event.shaped('rftoolsbase:machine_infuser', [
+                    'CRC',
+                    'GPG',
+                    'CRC'
+                    ], {
+                        C: 'rftoolsbase:dimensionalshard',
+                        R: 'minecraft:redstone',
+                        A: 'minecraft:air',
+                        P: 'kubejs:1_component',
+                        G: 'minecraft:diamond',
+                    });
+
+
+                    event.shaped('thermal:dynamo_stirling', [
+                        'AXA',
+                        'GPG',
+                        'CIC'
+                        ], {
+                            C: '#forge:stone',
+                            X: 'thermal:rf_coil',
+                            A: 'minecraft:air',
+                            P: 'kubejs:1_component',
+                            G: 'minecraft:iron_ingot',
+                            P: 'kubejs:1_component',
+                            I: 'minecraft:redstone'
+                        });
+
+                    event.shaped('thermal:machine_crucible', [
+                        'AXA',
+                        'GPG',
+                        'CIC'
+                        ], {
+                            C: 'thermal:invar_gear',
+                            X: '#forge:glass',
+                            A: 'minecraft:air',
+                            P: 'kubejs:1_component',
+                            G: 'minecraft:nether_bricks',
+                            P: 'kubejs:1_component',
+                            I: 'thermal:rf_coil'
+                        });
+
+                        event.shaped('thermal:machine_chiller', [
+                            'AXA',
+                            'GPG',
+                            'CIC'
+                            ], {
+                                C: 'thermal:invar_gear',
+                                X: '#forge:glass',
+                                A: 'minecraft:air',
+                                P: 'kubejs:1_component',
+                                G: 'minecraft:packed_ice',
+                                P: 'kubejs:1_component',
+                                I: 'thermal:rf_coil'
+                            });
+
+                        event.shaped('thermal:machine_furnace', [
+                            'AXA',
+                            'GPG',
+                            'CIC'
+                            ], {
+                                C: 'thermal:copper_gear',
+                                X: 'minecraft:redstone',
+                                A: 'minecraft:air',
+                                P: 'kubejs:1_component',
+                                G: 'minecraft:bricks',
+                                P: 'kubejs:1_component',
+                                I: 'thermal:rf_coil'
+                            });
+    
+
+
+                    event.shaped('thermal:machine_bottler', [
+                        'AXA',
+                        'GPG',
+                        'CIC'
+                        ], {
+                            C: 'thermal:copper_gear',
+                            X: 'minecraft:bucket',
+                            A: 'minecraft:air',
+                            P: 'kubejs:1_component',
+                            G: '#forge:glass',
+                            P: 'kubejs:1_component',
+                            I: 'thermal:rf_coil'
+                        });
+
+                        event.shaped('thermal:machine_sawmill', [
+                            'AXA',
+                            'GPG',
+                            'CIC'
+                            ], {
+                                C: 'thermal:copper_gear',
+                                X: 'thermal:saw_blade',
+                                A: 'minecraft:air',
+                                P: 'kubejs:1_component',
+                                G: '#forge:stone',
+                                P: 'kubejs:1_component',
+                                I: 'thermal:rf_coil'
+                            });
         
+
+
+                    event.shaped('kubejs:1_bone_block', [
+                        'AAA',
+                        'AAA',
+                        'AAA'
+                        ], {
+                            A: 'minecraft:bone_block'
+                        });
+                
+                        event.shaped('kubejs:2_bone_block', [
+                            'AAA',
+                            'AAA',
+                            'AAA'
+                            ], {
+                                A: 'kubejs:1_bone_block'
+                            });
+                            event.shaped('kubejs:3_bone_block', [
+                                'AAA',
+                                'AAA',
+                                'AAA'
+                                ], {
+                                    A: 'kubejs:2_bone_block'
+                                });
+                
+                                event.shaped('kubejs:4_bone_block', [
+                                    'AAA',
+                                    'AAA',
+                                    'AAA'
+                                    ], {
+                                        A: 'kubejs:3_bone_block'
+                                    });
+                
+                                    event.shaped('kubejs:5_bone_block', [
+                                        'AAA',
+                                        'AAA',
+                                        'AAA'
+                                        ], {
+                                            A: 'kubejs:4_bone_block'
+                                        });
+                    
+                        event.shaped('kubejs:6_bone_block', [
+                            'AAA',
+                            'AAA',
+                            'AAA'
+                            ], {
+                                A: 'kubejs:5_bone_block'
+                            });
 
 
 

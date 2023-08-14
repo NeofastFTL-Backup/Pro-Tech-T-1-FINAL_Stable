@@ -22,3 +22,4 @@ tconstruct:clay_island
 tconstruct:blood_island
 tconstruct:end_slime_island
 ae2:meteorite
+quark:mega_dungeon

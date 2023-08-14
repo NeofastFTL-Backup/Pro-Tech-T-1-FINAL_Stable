@@ -1,7 +1,7 @@
 {
 	id: "05E64C9815AA76AD"
 	group: ""
-	order_index: 4
+	order_index: 3
 	filename: "botany_pots_tiers_unlocking"
 	title: "Mod Unlocking!"
 	icon: "thermal:enderium_gear"
@@ -77,6 +77,27 @@
 				title: "Unlock it!"
 				icon: "minecraft:lever"
 				command: "/phase grant @r m_a_seeds"
+				player_command: true
+			}]
+		}
+		{
+			title: "Unlock Hostile Neural Networks!"
+			x: -0.5d
+			y: -4.0d
+			subtitle: "Get your hostile neural networks running and up again!"
+			id: "2F629C4F3091E5E3"
+			tasks: [{
+				id: "7011B979AB08A1BB"
+				type: "item"
+				item: "kubejs:6_bone_block"
+				count: 4L
+			}]
+			rewards: [{
+				id: "52F6937C4F139A28"
+				type: "command"
+				title: "Unlock it!"
+				icon: "minecraft:lever"
+				command: "/gamestage add @r hostilenetworks_stage"
 				player_command: true
 			}]
 		}

@@ -1,6 +1,12 @@
 onEvent('item.registry', event => {
 
 	event.create('1_component').displayName('Basic Nano Machine');
+	event.create('2_component').displayName('Advanced Nano Machine');
+
+
+	event.create('bronzar_ingot').displayName('Bronzar Ingot');
+	event.create('intrum_ingot').displayName('Intrum Ingot');
+	event.create('brassmium_ingot').displayName('Brassmium Ingot');
 
 
 
@@ -11,6 +17,13 @@ onEvent('item.registry', event => {
 	event.create('4_hay_bale').displayName('Quadruple Compressed Hay Bale');
 	event.create('5_hay_bale').displayName('Quintuple Compressed Hay Bale');
 	event.create('6_hay_bale').displayName('Sextuple Compressed Hay Bale');
+
+	event.create('1_bone_block').displayName('Compressed Bone Block');
+	event.create('2_bone_block').displayName('Double Compressed Bone Block');
+	event.create('3_bone_block').displayName('Triple Compressed Bone Block');
+	event.create('4_bone_block').displayName('Quadruple Compressed Bone Block');
+	event.create('5_bone_block').displayName('Quintuple Compressed Bone Block');
+	event.create('6_bone_block').displayName('Sextuple Compressed Bone Block');
 
 
 	event.create('1_darkmatter').displayName('Compressed Dark Matter Block');

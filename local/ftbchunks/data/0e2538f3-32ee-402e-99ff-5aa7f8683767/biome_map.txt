@@ -1,5 +1,7 @@
 #4CA minecraft:dripstone_caves
 #010 minecraft:forest
 #2D6 minecraft:meadow
+#2F9 mining_dimension:mining
 #3DC minecraft:plains
 #5FF minecraft:river
+#169 minecraft:taiga

@@ -1,1 +1,2 @@
 minecraft:overworld
+mining_dimension:mining
