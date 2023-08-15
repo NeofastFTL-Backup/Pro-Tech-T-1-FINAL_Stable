@@ -35,6 +35,12 @@
     },
     "done": true
   },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2023-08-14 17:03:43 +0200"
+    },
+    "done": true
+  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2023-08-08 10:27:44 +0200"
@@ -93,6 +99,12 @@
   "tconstruct:smeltery/tinkers_anvil": {
     "criteria": {
       "crafted_overworld": "2023-08-12 18:25:32 +0200"
+    },
+    "done": true
+  },
+  "botania:main/generating_flower": {
+    "criteria": {
+      "flower": "2023-08-14 16:53:42 +0200"
     },
     "done": true
   },
@@ -163,6 +175,12 @@
     },
     "done": true
   },
+  "botania:main/mana_pool_pickup": {
+    "criteria": {
+      "pickup": "2023-08-14 16:50:03 +0200"
+    },
+    "done": true
+  },
   "minecraft:adventure/shoot_arrow": {
     "criteria": {
       "shot_arrow": "2023-08-10 12:58:10 +0200"
@@ -208,6 +226,12 @@
   "tombstone:adventure/chain_death": {
     "criteria": {
       "coded_trigger": "2023-08-10 12:53:34 +0200"
+    },
+    "done": true
+  },
+  "botania:main/mana_pool_pickup_lexicon": {
+    "criteria": {
+      "pickup": "2023-08-14 16:50:03 +0200"
     },
     "done": true
   },
@@ -323,6 +347,12 @@
   "tconstruct:tools/modified": {
     "criteria": {
       "crafted_tool": "2023-08-09 10:11:24 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2023-08-14 15:53:19 +0200"
     },
     "done": true
   },

@@ -68,6 +68,22 @@
 				item: "mekanism:enrichment_chamber"
 			}]
 		}
+		{
+			x: -0.5d
+			y: -2.5d
+			subtitle: "Crucible?"
+			id: "6AA6A574EB4FF551"
+			tasks: [{
+				id: "1B06D571AD5F45BD"
+				type: "item"
+				item: "mekanism:superheating_element"
+			}]
+			rewards: [{
+				id: "194B159AA84BABE6"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

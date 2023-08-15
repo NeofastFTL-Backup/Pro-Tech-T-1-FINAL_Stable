@@ -29,10 +29,30 @@ onEvent('recipes', event => {
     event.remove({id: 'mekanism:upgrade_energy'});
     event.remove({id: 'mekanism:upgrade_speed'});
     event.remove({id: 'mekanism:crusher'});
+    event.remove({id: 'fluxnetworks:flux_dust'});
+    event.remove({output: 'create:zinc_ingot'});
+    event.remove({output: 'alltheores:brass_dust'});
+    event.remove({output: 'alltheores:brass_ingot'});
+    event.remove({output: '#forge:dusts/bronze'});
+    event.remove({output: '#forge:ingots/bronze'});
+    event.remove({output: '#forge:dusts/invar'});
+    event.remove({output: '#forge:ingots/invar'});
+    event.remove({output: '#forge:dusts/signalum'});
+    event.remove({output: '#forge:ingots/signalum'});
+    event.remove({output: '#forge:dusts/electrum'});
+    event.remove({output: '#forge:ingots/electrum'});
+    event.remove({output: '#forge:dusts/lumium'});
+    event.remove({output: '#forge:ingots/lumium'});
+    event.remove({output: '#forge:dusts/constantan'});
+    event.remove({output: '#forge:ingots/constantan'});
     
     //Thermal Recipes
     onEvent('recipes', event => {
         event.recipes.thermal.smelter('kubejs:bronzar_ingot', ['#forge:ingots/invar', '#forge:ingots/bronze']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('fluxnetworks:flux_dust', ['minecraft:redstone', '#forge:stone', 'minecraft:obsidian']
     )});
 
     onEvent('recipes', event => {
@@ -42,6 +62,39 @@ onEvent('recipes', event => {
     onEvent('recipes', event => {
         event.recipes.thermal.smelter('kubejs:brassmium_ingot', ['#forge:ingots/brass', '#forge:ingots/osmium']
     )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:brass_ingot', ['#forge:ingots/copper', '#forge:ingots/zinc']
+    )});
+
+    
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:bronze_ingot', ['#forge:ingots/copper', '#forge:ingots/tin']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:invar_ingot', ['#forge:ingots/iron', '#forge:ingots/nickel']
+    )});
+
+    
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:signalum_ingot', ['minecraft:redstone', '#forge:ingots/copper', '#forge:ingots/silver']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:electrum_ingot', ['#forge:ingots/gold', '#forge:ingots/silver']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:lumium_ingot', ['minecraft:glowstone_dust', '#forge:ingots/tin', '#forge:ingots/silver']
+    )});
+
+    onEvent('recipes', event => {
+        event.recipes.thermal.smelter('alltheores:constantan_ingot', ['#forge:ingots/copper', '#forge:ingots/nickel']
+    )});
+
+
+
 
 
 
@@ -201,7 +254,7 @@ onEvent('recipes', event => {
                         O: 'kubejs:brassmium_ingot',
                         G: 'kubejs:intrum_ingot',
                         C: 'kubejs:bronzar_ingot',
-                        R: 'kubejs:4_glowstone',
+                        R: 'minecraft:glowstone',
                         I: 'kubejs:1_component',
                         S: '#forge:ingots/signalum',
                         D: '#forge:ingots/lumium',
@@ -215,7 +268,7 @@ onEvent('recipes', event => {
                     'CIC'
                     ], {
                         C: 'thermal:invar_ingot',
-                        Z: 'thermal:constantan_gear',
+                        Z: '#forge:gears/constantan',
                         G: 'minecraft:ice',
                         P: 'kubejs:1_component',
                         O: 'minecraft:magma_block',

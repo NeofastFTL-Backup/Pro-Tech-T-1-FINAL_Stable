@@ -10,6 +10,7 @@
 #1B82B7 tconstruct:budding_earth_slime_crystal
 #424F4E tconstruct:budding_sky_slime_crystal
 #00BE18 minecraft:calcite
+#5A84B6 quark:calcite_bricks
 #F522F4 minecraft:chest
 #480724 thermal:cinnabar_ore
 #7FDE54 minecraft:clay
@@ -57,6 +58,7 @@
 #4C963A minecraft:emerald_ore
 #DD1808 mekanism:fluorite_ore
 #5A75B0 minecraft:glow_lichen
+#482EEB minecraft:glowstone
 #B76A76 minecraft:gold_ore
 #060B35 minecraft:granite
 #3F84B7 minecraft:grass_block
@@ -80,6 +82,7 @@
 #CADBB6 thermal:nickel_ore
 #6C7BA6 alltheores:nickel_slate_ore
 #461AF2 thermal:niter_ore
+#BBA6D1 minecraft:oak_log
 #5C837A create:ochrum
 #BF0745 immersiveengineering:ore_aluminum
 #262421 immersiveengineering:ore_lead

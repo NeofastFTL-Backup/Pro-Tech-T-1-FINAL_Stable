@@ -101,6 +101,33 @@
 				player_command: true
 			}]
 		}
+		{
+			title: "Better andesite obtaining?!"
+			icon: "botania:cosmetic_questgiver_mark"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Use the pool and a alchemy catalyst to transform your stones into stonks!"
+			description: ["And also deconstruct your pipe wrench. Maybe it will help..."]
+			id: "04B8B4551AF2965A"
+			tasks: [
+				{
+					id: "7A3E91B648800AAF"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "498C073415EC7944"
+					type: "item"
+					item: "botania:alchemy_catalyst"
+				}
+			]
+			rewards: [{
+				id: "0F32ADB483BB11EB"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 4
+			}]
+		}
 	]
 	quest_links: [ ]
 }

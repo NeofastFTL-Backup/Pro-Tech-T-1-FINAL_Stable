@@ -293,12 +293,6 @@ alltheores:raw_silver_ore
 alltheores:raw_tin_ore
 alltheores:raw_uranium_ore
 alltheores:raw_zinc_ore
-minecraft:arid_garden
-minecraft:frost_garden
-minecraft:shaded_garden
-minecraft:soggy_garden
-minecraft:tropical_garden
-minecraft:windy_garden
 minecraft:maple_worldgen
 minecraft:pinenut_worldgen
 minecraft:almond_worldgen
@@ -353,3 +347,9 @@ minecraft:mesquite_worldgen
 minecraft:pinyon_worldgen
 minecraft:rubber_worldgen
 minecraft:eucalyptus_worldgen
+minecraft:arid_garden
+minecraft:frost_garden
+minecraft:shaded_garden
+minecraft:soggy_garden
+minecraft:tropical_garden
+minecraft:windy_garden
