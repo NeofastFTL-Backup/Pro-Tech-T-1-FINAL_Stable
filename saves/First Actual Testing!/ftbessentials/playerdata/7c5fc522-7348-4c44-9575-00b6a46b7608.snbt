@@ -4,7 +4,7 @@
 	god: false
 	nick: ""
 	name: "NeofastFTL"
-	last_seen: { dim: "minecraft:overworld", x: 15, y: 65, z: 6, time: 1692081903864L, xRot: 13.799945f, yRot: -179.8522f }
+	last_seen: { dim: "minecraft:overworld", x: 18, y: 65, z: 4, time: 1692121184123L, xRot: 12.300141f, yRot: 77.84735f }
 	recording: 0
 	teleport_history: [
 		{ dim: "minecraft:overworld", x: 22, y: 75, z: 3, time: 1691664988493L, xRot: 89.55008f, yRot: -107.15772f }

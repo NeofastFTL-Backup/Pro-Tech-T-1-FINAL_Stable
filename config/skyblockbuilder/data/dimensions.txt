@@ -1,6 +1,6 @@
 minecraft:overworld
-minecraft:the_nether
-minecraft:the_end
 ae2:spatial_storage
+minecraft:the_end
 mining_dimension:mining
 compactmachines:compact_world
+minecraft:the_nether

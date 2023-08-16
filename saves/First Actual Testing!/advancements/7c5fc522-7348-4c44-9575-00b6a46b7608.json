@@ -1,4 +1,10 @@
 {
+  "immersiveengineering:main/craft_treatedwood": {
+    "criteria": {
+      "has_item": "2023-08-15 14:54:11 +0200"
+    },
+    "done": true
+  },
   "tconstruct:tools/materials_and_you": {
     "criteria": {
       "crafted_book": "2023-08-08 10:11:57 +0200"
@@ -193,6 +199,12 @@
     },
     "done": true
   },
+  "immersiveengineering:main/creosote": {
+    "criteria": {
+      "has_item": "2023-08-15 14:53:48 +0200"
+    },
+    "done": true
+  },
   "tconstruct:smeltery/cast_collector": {
     "criteria": {
       "ingot": "2023-08-09 09:26:13 +0200"
@@ -208,6 +220,12 @@
   "exmachinis:root": {
     "criteria": {
       "tick": "2023-08-08 17:26:47 +0200"
+    },
+    "done": true
+  },
+  "immersiveengineering:main/mb_cokeoven": {
+    "criteria": {
+      "form_multiblock": "2023-08-15 09:48:22 +0200"
     },
     "done": true
   },

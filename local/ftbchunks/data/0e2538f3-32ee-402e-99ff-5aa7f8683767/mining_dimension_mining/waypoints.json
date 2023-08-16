@@ -1,1 +1,1 @@
-{"waypoints":[{"hidden":false,"name":"Death #3","x":15,"y":69,"z":-63,"color":"#FF0000","type":"death"},{"hidden":true,"name":"Death #2","x":4,"y":-15,"z":1,"color":"#FF0000","type":"death"}]}
+{"waypoints":[{"hidden":true,"name":"Death #2","x":4,"y":-15,"z":1,"color":"#FF0000","type":"death"},{"hidden":false,"name":"Death #3","x":15,"y":69,"z":-63,"color":"#FF0000","type":"death"}]}

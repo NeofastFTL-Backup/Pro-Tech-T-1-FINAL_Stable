@@ -1,0 +1,64 @@
+{
+	id: "07C7D49C5BC228F9"
+	group: ""
+	order_index: 11
+	filename: "applied_energistics_2"
+	title: "Applied Energistics 2"
+	icon: "ae2:engineering_processor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "13D4DAD1F6C7F08A"
+			tasks: [{
+				id: "4C5FFCE1110CEB35"
+				type: "item"
+				item: "ae2:inscriber"
+				count: 4L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			id: "34212D6D27DF1BD9"
+			tasks: [{
+				id: "30FF3C30C3F6FE63"
+				type: "item"
+				item: "ae2:calculation_processor_press"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			id: "2A3500E34B167AD2"
+			tasks: [{
+				id: "04C9853567FE9420"
+				type: "item"
+				item: "ae2:engineering_processor_press"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			id: "60976E0919B2BAB6"
+			tasks: [{
+				id: "6893AF9509128DF6"
+				type: "item"
+				item: "ae2:logic_processor_press"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			id: "111B27A11137FCD8"
+			tasks: [{
+				id: "018391466F15DD68"
+				type: "item"
+				item: "ae2:silicon_press"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

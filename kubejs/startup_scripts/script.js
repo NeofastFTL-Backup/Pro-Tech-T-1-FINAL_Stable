@@ -2,11 +2,15 @@ onEvent('item.registry', event => {
 
 	event.create('1_component').displayName('Basic Nano Machine');
 	event.create('2_component').displayName('Advanced Nano Machine');
-
+	event.create('3_component').displayName('Professional Nano Machine');
 
 	event.create('bronzar_ingot').displayName('Bronzar Ingot');
 	event.create('intrum_ingot').displayName('Intrum Ingot');
 	event.create('brassmium_ingot').displayName('Brassmium Ingot');
+
+	event.create('intrum_ingot_block').displayName('Block of Intrun');
+
+
 
 
 

@@ -45,6 +45,10 @@ onEvent('recipes', event => {
     event.remove({output: '#forge:ingots/lumium'});
     event.remove({output: '#forge:dusts/constantan'});
     event.remove({output: '#forge:ingots/constantan'});
+
+    event.remove({id: 'immersiveengineering:cokeoven/charcoal'});
+    event.remove({id: 'immersiveengineering:cokeoven/coke_block'});
+    event.remove({id: 'immersiveengineering:cokeoven/coke'});
     
     //Thermal Recipes
     onEvent('recipes', event => {
@@ -93,6 +97,51 @@ onEvent('recipes', event => {
         event.recipes.thermal.smelter('alltheores:constantan_ingot', ['#forge:ingots/copper', '#forge:ingots/nickel']
     )});
 
+    onEvent('recipes', event => {
+        event.recipes.immersiveengineeringCokeOven('immersiveengineering:coal_coke', 'kubejs:1_component').creosote(500).time(400)
+    });
+
+
+    event.remove({output: 'ae2:calculation_processor_press'});
+    event.shaped('ae2:calculation_processor_press', [
+        'III',
+        'ICI',
+        'III'
+        ], {
+            I: 'kubejs:intrum_ingot',
+            C: 'ae2:certus_quartz_crystal'
+        });
+
+        event.remove({output: 'ae2:engineering_processor_press'});
+        event.shaped('ae2:engineering_processor_press', [
+            'III',
+            'ICI',
+            'III'
+            ], {
+                I: 'kubejs:intrum_ingot',
+                C: 'minecraft:diamond'
+            });
+
+            
+        event.remove({output: 'ae2:logic_processor_press'});
+        event.shaped('ae2:logic_processor_press', [
+            'III',
+            'ICI',
+            'III'
+            ], {
+                I: 'kubejs:intrum_ingot',
+                C: 'minecraft:gold_ingot'
+            });
+
+            event.remove({output: 'ae2:silicon_press'});
+            event.shaped('ae2:silicon_press', [
+                'III',
+                'ICI',
+                'III'
+                ], {
+                    I: 'kubejs:intrum_ingot',
+                    C: 'ae2:silicon'
+                });
 
 
 
